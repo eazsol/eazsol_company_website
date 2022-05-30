@@ -1,13 +1,24 @@
-<div>
-  # <h1 class="font-bold text-4xl">Home#index</h1>
-  <h1 class="text-3xl">
-    Hello world!
-  </h1>
-  <button class="transition delay-150 duration-300 ease-in-out">Button A</button>
+<%# Navbar %>
+<nav class="relative container mx-auto p-6 w-full">
+    <div class="flex items-center justify-between">
+        <div class="pt-2 w-2/12">
+            <%= image_tag 'eazlogo-without-name', style: 'width:25%;'%>
+        </div>
+        <%# Link for pages %>
+        <div class="flex space-x-6">
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">About us</a>
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">Services</a>
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">Technologies </a>
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">Case Study</a>
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">Career</a>
+            <a href="" class = "hover:text-darkGrayishBlue pt-2">Blogs</a>
+            <%# contact Button %>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-1 rounded">
+                Contact
+            </button>
+        </div>
+    </div>
+</nav>
 
-
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-  Button
-  </button>
-  <p>Find me in app/views/home/index.html.erb</p>
-</div>
+<section>
+</section>

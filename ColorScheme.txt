@@ -1,0 +1,7 @@
+Color Scheme
+
+drak-color: #F7FAFC
+drak-light-color: #448AC1
+drak-lighter-color: #F7FAFC
+light-color: #F7FAFC
+lighter: #F7FAFC

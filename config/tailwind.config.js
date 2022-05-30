@@ -1,21 +1,24 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: [
-    './app/helpers/**/*.rb',
-    './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}'
-  ],
+  content: ['./*.html'],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    colors: {
+
+      "drakercolor": "#F7FAFC",
+      "draklightcolor": "#448AC1",
+      "draklightercolor": "#F7FAFC",
+      "lightcolor": "#F7FAFC",
+      "lightercolor": "#F7FAFC",
+    },
     extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
-  ]
+  plugins: [],
 }
